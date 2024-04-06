@@ -89,12 +89,6 @@ if((digitalRead(2) && !digitalRead(3)&&!digitalRead(4))&&!digitalRead(5)^digital
   }else{
     digitalWrite(11,LOW);
   }
-//or              1                 1                0  
-  if((digitalRead(2) && digitalRead(3)&&!digitalRead(4))&&digitalRead(7)||digitalRead(8)||digitalRead(5)||digitalRead(6)){
-    digitalWrite(11,HIGH);
-  }else{
-    digitalWrite(11,LOW);
-  }
 //xor             1                 1               1  
   if((digitalRead(2) && digitalRead(3)&&digitalRead(4))&&digitalRead(7)^digitalRead(8)^digitalRead(5)^digitalRead(6)){
     digitalWrite(11,HIGH);
